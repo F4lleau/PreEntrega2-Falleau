@@ -1,0 +1,394 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    --colortextos: #FFFFFF;
+    --colorbotones: #999999;
+    --colorfondo: #212F3C;
+    --paddingsecciones:60px 0;
+    --marginelementos: 40px;
+}
+
+body{
+    background-color: #212F3C;
+}
+
+.contenedor{
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingsecciones);
+}
+
+.contenedor-textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--colortextos);
+}
+.menu-navegacion{
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+}
+
+.logo{
+    height: 110px;
+}
+
+.logo img{
+    display: block;
+    height: 100%;
+}
+
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a{
+    text-decoration: none;
+    color: var(--colortextos);
+    padding-left: 10px;
+
+}
+
+.hero{
+    height: 300px;
+    background-image: url(../media/main.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.hero p{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+/*main*/
+
+main{
+    background-color: #efefef;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.post-list{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.titulo-seccion{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #008080;
+    padding: 30px;
+    text-align: center;
+}
+.post-img-1{
+    background: url(../media/obra-particular.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-2{
+    background: url(../media/obra-estado.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-3{
+    background: url(../media/remodelaciones.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-4{
+    background: url(../media/herrería.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-5{
+    background: url(../media/aberturas.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-6{
+    background: url(../media/refacción-local-comercial.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post{
+    box-shadow: 0 1px 6px 1px rgba(0,0,0,0.1);
+    transition: .2s;
+}
+
+.post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+}
+
+.post-header{
+    width: 100%;
+    height: 200%;
+}
+
+.post-body{
+    padding: 15px;
+    text-align: center;
+}
+
+.post-body h3{
+    margin-bottom: 15px;
+    color: #008080;
+}
+
+.post-body p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+/*Footer*/
+.pie-pagina{
+    width: 100%;
+    height: 250px;
+    background-color: #212F3C;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    padding: 10px 10px;
+    
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    line-height: 45px;
+    color: #fff;
+    background-color: #212F3C;
+    text-align: center;
+    transition: ;
+}
+
+/*Formulario contacto*/
+
+.contact-us{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2em;
+    color: #008080;
+}
+
+.contact-tipe{
+    width: 450px;
+    margin: auto;
+    background: #c9d3dd;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #428bca;
+    color: #fff;
+    padding: 20px;
+    border: none;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+/*clientes*/
+
+.clientes-datos{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+.datos-tipe{
+    width: 600px;
+    margin: auto;
+    background: #c9d3dd;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: none;
+}
+/*work*/
+
+.banner{
+    margin-top: 0px;
+}
+
+.banner img{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: auto;
+}
+.work{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding: 30px 200px;
+}
+
+.work article{
+    margin: 15px;
+}
+
+.work img{
+    width: 100%;
+    max-width: 280px;
+}
+
+.work h3{
+    text-align: center;
+    color: #008080;
+}
+
+.work h4{
+    text-align: center;
+    color: #212F3C;
+}
+
+/*quienes somos*/
+
+.text-principal h3{
+    text-align: center;
+    color: #008080;
+}
+
+.text-principal p{
+    text-align: center;
+    color: #212F3C;
+}
+
+.text-principal{;
+    margin: auto;
+}
+.mision-vision{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mision-vision img{
+    width: 100%;
+    max-width: 280px;
+}
+.mision-vision article{
+    margin: 15px;
+}
+
+.mision-vision h3{
+    text-align: center;
+    margin: 15px;
+    max-width: 280px;
+}
+
+.mision-vision p{
+    text-align: center;
+    margin: 15px;
+    max-width: 280px;
